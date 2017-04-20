@@ -63,6 +63,8 @@ var savecustom = function()
 	var ln11v2 = ""
  	var flags = ""
 	var fcheck = ""
+	var fchecktf = document.getElementById("fcheck").checked
+	var hchecktf = document.getElementById("hcheck").checked
 	
 	if(lines[0].indexOf('(M)') != -1)
 	{
@@ -162,7 +164,7 @@ var savecustom = function()
     		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186)
 		var pivs = '"ivs":{'
     
-  		if (document.getElementById("hcheck").checked = true)
+  		if (hchecktf = true)
 		{
     		var p1 = '{"'
     		var p2 = '":{"flags":{'
@@ -173,7 +175,7 @@ var savecustom = function()
     
     		var bcheck = ""
     
-    		if (document.getElementById("fcheck").checked = true)
+    		if (fchecktf = true)
 		{
     		var fcheck = ']},'
 		};
