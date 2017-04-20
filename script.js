@@ -62,7 +62,6 @@ var savecustom = function()
 	var ln12p1 = ""
 	var ln11v2 = ""
  	var flags = ""
-	var pivs = ""
 	var fcheck = ""
 	
 	if(lines[0].indexOf('(M)') != -1)
@@ -254,10 +253,11 @@ var savecustom = function()
 			var spiv = ""
 		}
 		else var spiv = ln10p1.concat(IVs[5], lnbr);
-    
+	{
+		var pivs = ""
     		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186
-      		var pivs = '"ivs":{'
-    		else var pivs = "";
+		    var pivs = '"ivs":{'
+	}
     
   		if (document.getElementById("hcheck").checked) = true
     		var p1 = '{"'
