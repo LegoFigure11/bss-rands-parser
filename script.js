@@ -32,36 +32,20 @@ var savecustom = function()
 	var IVs = [31,31,31,31,31,31]
 	var nature = "Serious"
 	var moves = []
-	var ln1p1 = '  "'
-	var ln1p2 = '" { \n'
-	var ln2p1 = '    "'
-	var ln2p2 = ""
-	var ln2p3 = '": { \n'
-	var ln3 = '      "level": 50, \n'
-	var ln4 = '      "evs": { \n'
-	var ln5p1 = '        "hp": '
-	var lnbr = '\n'
-	var ln6p1 = '        "at": '
-	var ln7p1 = '        "df": '
-	var ln8p1 = '        "sa": '
-	var ln9p1 = '        "sd": '
-	var ln10p1 = '        "se": '
-	var ln12p1 = '      "ivs": { \n'
-	var ln11 = '      }, \n'
-	var ln19p1 = '      "nature": "'
-	var lnen = '", \n'
-	var ln20p1 = '      "ability": "'
-	var ln21p1 = '      "item": "'
-	var ln22 = '      "moves": [ \n'
-	var lnmv = '        "'
-	var lnenl = '" \n'
-	var movarray = new Array()
-	var ln3l = '      ] \n'
-	var ln2l = '    } \n'
-	var lnl = '  },'
-	var ln12p1 = ""
-	var ln11v2 = ""
  	var flags = ""
+	var part1 = '{"species":'
+	var part2 = '","gender":"'
+	
+	
+	if(lines[0].indexOf('(M)') != -1)
+	{
+	var gender = "M"
+	}
+	else if(lines[0].indexOf('(F)') != -1)
+	{
+	var gender = "F"
+	}
+	else var gender = ""
 	
 	if(lines[0].indexOf('(M)') != -1)
 	{
@@ -199,6 +183,7 @@ var savecustom = function()
 		var ln15p2 = IVs[3]
 		var ln16p2 = IVs[4]
 		var ln17p2 = IVs[5]
+		/*
 		
 		
 		if (EVs[0] == 0)
@@ -274,9 +259,12 @@ var savecustom = function()
 			var spiv = ""
 		}
 		else var spiv = ln10p1.concat(IVs[5], lnbr);
+		
+		var concivs = hpiv.concat(ativ,deiv,saiv,sdiv,spiv)
+*/
 	
 		if (document.getElementById('bcheck').checked) {
-        		var bcheck ="bcheck test";
+        		var bcheck = part1.concat(species,part2,gender);
     			}
    			else {
        			var bcheck = "";
