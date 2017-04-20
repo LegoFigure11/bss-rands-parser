@@ -168,8 +168,8 @@ var savecustom = function()
     		var p2 = '":{"flags":{'
     		var p3 = '},"sets":['
     		var hcheck = p1.concat(species, p2, flags, p3)
-		};
-    		else var hcheck = ""
+		}
+    		else var hcheck = "";
     
     		var bcheck = ""
     
