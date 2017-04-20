@@ -61,8 +61,10 @@ var savecustom = function()
 	var lnl = '  },'
 	var ln12p1 = ""
 	var ln11v2 = ""
-  var flags = ""
-
+ 	var flags = ""
+	var pivs = ""
+	var fcheck = ""
+	
 	if(lines[0].indexOf('(M)') != -1)
 	{
 		lines[0] = lines[0].substring(0, lines[0].indexOf('(M)') - 1) + 
@@ -251,33 +253,32 @@ var savecustom = function()
 		{
 			var spiv = ""
 		}
-		else var spiv = ln10p1.concat(IVs[5], lnbr)
+		else var spiv = ln10p1.concat(IVs[5], lnbr);
     
-    if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186
-    {
-      var pivs = '"ivs":{'
-    } 
-    else var pivs = ""
+    		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186
+   		{
+      		var pivs = '"ivs":{'
+    		} 
+    		else var pivs = "";
     
-    if (document.getElementById("hcheck") = true
-    {
-    var p1 = '{"'
-    var p2 = '":{"flags":{'
-    var p3 = '},"sets":['
-    var hcheck = p1.concat(species, p2, flags, p3)
-    }
-    else var hcheck = ""
+  		if (document.getElementById("hcheck") = true
+   		{
+    		var p1 = '{"'
+    		var p2 = '":{"flags":{'
+    		var p3 = '},"sets":['
+    		var hcheck = p1.concat(species, p2, flags, p3)
+    		}
+    		else var hcheck = "";
     
-    var bcheck = ""
+    		var bcheck = "";
     
-    if (document.getElementById("fcheck") = true
-    {
-    var fcheck = ']},'
-    }
-    else var fcheck = ""
+    		if (document.getElementById("fcheck").checked = true
+    		{
+    		var fcheck = ']},'
+    		};
 		
 		
-	var res = ln1p1.concat(species, ln1p2, ln2p1, ln2p2, ln2p3, ln3, ln4, hpev, atev, deev, saev, sdev, spev, ln11, ln12p1, hpiv, ativ, deiv, saiv, sdiv, spiv, ln11v2, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, move1, lnen, lnmv, move2, lnen, lnmv, move3, lnen, lnmv, move4, lnenl, ln3l, ln2l, lnl);
+	//var res = ln1p1.concat(species, ln1p2, ln2p1, ln2p2, ln2p3, ln3, ln4, hpev, atev, deev, saev, sdev, spev, ln11, ln12p1, hpiv, ativ, deiv, saiv, sdiv, spiv, ln11v2, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, move1, lnen, lnmv, move2, lnen, lnmv, move3, lnen, lnmv, move4, lnenl, ln3l, ln2l, lnl);
     document.getElementById("Output").innerHTML = hcheck.concat(bcheck, fcheck)
 
 
