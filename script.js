@@ -32,6 +32,7 @@ var savecustom = function()
 	var IVs = [31,31,31,31,31,31]
 	var nature = "Serious"
 	var moves = []
+	var movarray = new Array()
  	var flags = ""
 	var part1 = '{"species":'
 	var part2 = '","gender":"'
