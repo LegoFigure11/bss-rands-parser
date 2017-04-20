@@ -163,10 +163,12 @@ var savecustom = function()
 		var pivs = '"ivs":{'
     
   		if (document.getElementById("hcheck").checked = true)
+		{
     		var p1 = '{"'
     		var p2 = '":{"flags":{'
     		var p3 = '},"sets":['
     		var hcheck = p1.concat(species, p2, flags, p3)
+		}
     		else var hcheck = ""
     
     		var bcheck = ""
