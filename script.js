@@ -36,6 +36,9 @@ var savecustom = function()
  	var flags = ""
 	var part1 = '{"species":'
 	var part2 = '","gender":"'
+	var part3 = '","item":"'
+	var part4 = '","ability":"'
+	var part5 = '","evs":{'
 	
 	
 	if(lines[0].indexOf('(M)') != -1)
@@ -265,7 +268,7 @@ var savecustom = function()
 */
 	
 		if (document.getElementById('bcheck').checked) {
-        		var bcheck = part1.concat(species,part2,gender);
+        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5);
     			}
    			else {
        			var bcheck = "";
