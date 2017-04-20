@@ -157,7 +157,7 @@ var savecustom = function()
 			var move3 = movlist.split(",")[2]
 			var move4 = movlist.split(",")[3]
 			
-			else var spiv = ln10p1.concat(IVs[5], lnbr);
+
 	{
 		var pivs = ""
     		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186
@@ -272,6 +272,7 @@ var savecustom = function()
 		{
 			var spiv = ""
 		}
+		else var spiv = ln10p1.concat(IVs[5], lnbr);
 		
 		
 	//var res = ln1p1.concat(species, ln1p2, ln2p1, ln2p2, ln2p3, ln3, ln4, hpev, atev, deev, saev, sdev, spev, ln11, ln12p1, hpiv, ativ, deiv, saiv, sdiv, spiv, ln11v2, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, move1, lnen, lnmv, move2, lnen, lnmv, move3, lnen, lnmv, move4, lnenl, ln3l, ln2l, lnl);
