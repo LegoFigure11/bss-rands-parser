@@ -150,6 +150,11 @@ var savecustom = function()
 			var move3 = movlist.split(",")[2]
 			var move4 = movlist.split(",")[3]
 			
+			if(item.indexOf("ium") != -1) //if item is Z move
+			{
+				flags = '"zmoveOnly:"2'
+			}
+			
 
 		var pivs = ""
     		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186)
