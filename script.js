@@ -156,11 +156,11 @@ var savecustom = function()
 			}
 			if(item.indexOf("ite") != -1) //if item is a mega stone
 			{
-				if(item = "White Herb")
+				if(item == "White Herb")
 				   {
 				   flags = ""
 				   }
-				 else if(item = "Eviolite")
+				 else if(item == "Eviolite")
 				 {
 					 flags = ""
 				 }
