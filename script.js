@@ -152,7 +152,19 @@ var savecustom = function()
 			
 			if(item.indexOf("ium") != -1) //if item is Z move
 			{
-				flags = '"zmoveOnly:"2'
+				flags = '"zmoveOnly":2'
+			}
+			if(item.indexOf("ite") != -1) //if item is a mega stone
+			{
+				if(item = "White Herb")
+				   {
+				   flags = ""
+				   }
+				 else if(item = "Eviolite")
+				 {
+					 flags = ""
+				 }
+				else flags = '"megaOnly":1'
 			}
 			
 
