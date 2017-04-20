@@ -165,7 +165,7 @@ var savecustom = function()
     		var p1 = '{"'
     		var p2 = '":{"flags":{'
     		var p3 = '},"sets":['
-    		var hcheck = p1.concat(species, p2, flags, p3)
+    		var hcheck = p1.concat(species.toLowerCase(), p2, flags, p3)
 		}
     		else {
 		var hcheck = "";
@@ -174,7 +174,7 @@ var savecustom = function()
     		var bcheck = ""
 		
 		 if (document.getElementById('fcheck').checked) {
-        		var fcheck ="']},";
+        		var fcheck ="]},";
     			}
    			else {
        			var fcheck = "";
