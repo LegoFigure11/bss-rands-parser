@@ -177,9 +177,9 @@ var savecustom = function()
 			var hpev = '"hp":'
 			var atev = ',"atk":'
 			var deev = ',"def":'
-			var saev = '"spa":'
-			var sdev = '"spd":'
-			var spev = '"spe":'
+			var saev = ',"spa":'
+			var sdev = ',"spd":'
+			var spev = ',"spe":'
 		
 	/*	
 		if (IVs[0] == 31)
