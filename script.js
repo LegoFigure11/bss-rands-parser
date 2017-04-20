@@ -160,7 +160,7 @@ var savecustom = function()
 
 	{
 		var pivs = ""
-    		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5]))<186
+    		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186) = true
 		var pivs = '"ivs":{'
 	}
     
