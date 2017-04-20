@@ -62,9 +62,6 @@ var savecustom = function()
 	var ln12p1 = ""
 	var ln11v2 = ""
  	var flags = ""
-	var fcheck = ""
-	var fchecktf = document.getElementById("fcheck").checked
-	var hchecktf = document.getElementById("hcheck").checked
 	
 	if(lines[0].indexOf('(M)') != -1)
 	{
@@ -164,22 +161,24 @@ var savecustom = function()
     		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186)
 		var pivs = '"ivs":{'
     
-  		if (hchecktf = true)
-		{
+		if (document.getElementById('hcheck').checked) {
     		var p1 = '{"'
     		var p2 = '":{"flags":{'
     		var p3 = '},"sets":['
     		var hcheck = p1.concat(species, p2, flags, p3)
 		}
-    		else var hcheck = "";
+    		else {
+		var hcheck = "";
+		}
     
     		var bcheck = ""
-    
-    		if (fchecktf = true)
-		{
-    		var fcheck = ']},'
-		};
 		
+		 if (document.getElementById('fcheck').checked) {
+        		var fcheck ="']},";
+    			}
+   			else {
+       			var fcheck = "";
+    			}		
 			
 		    if (lines[0].indexOf('(') != -1)
 		    {
