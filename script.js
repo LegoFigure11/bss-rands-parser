@@ -39,6 +39,12 @@ var savecustom = function()
 	var part3 = '","item":"'
 	var part4 = '","ability":"'
 	var part5 = '","evs":{'
+	var part6 = '},"nature":"'
+	var part7 = '","moves":[["'
+	var part8 = '"],["'
+	var part9 = '"]]'
+	var part11 = '}'
+	
 	
 	
 	if(lines[0].indexOf('(M)') != -1)
@@ -222,7 +228,8 @@ var savecustom = function()
 */
 	
 		if (document.getElementById('bcheck').checked) {
-        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5]);
+			//        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,IV shit,part11);
+        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part11);
     			}
    			else {
        			var bcheck = "";
