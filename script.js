@@ -162,7 +162,7 @@ var savecustom = function()
     		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186)
 		var pivs = '"ivs":{'
     
-  		if (document.getElementById("hcheck").checked) = true
+  		if (document.getElementById("hcheck").checked = true)
     		var p1 = '{"'
     		var p2 = '":{"flags":{'
     		var p3 = '},"sets":['
@@ -171,7 +171,7 @@ var savecustom = function()
     
     		var bcheck = ""
     
-    		if (document.getElementById("fcheck").checked) = true
+    		if (document.getElementById("fcheck").checked = true)
     		var fcheck = ']},'
 		
 			
