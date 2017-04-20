@@ -172,62 +172,16 @@ var savecustom = function()
 		    }
 		    else var ln2p2 = "set name"
 		}
-	}
-
-	
-		var ln5p2 = EVs[0]
-		var ln6p2 = EVs[1]
-		var ln7p2 = EVs[2]
-		var ln8p2 = EVs[3]
-		var ln9p2 = EVs[4]
-		var ln10p2 = EVs[5]
-		var ln12p2 = IVs[0]
-		var ln13p2 = IVs[1]
-		var ln14p2 = IVs[2]
-		var ln15p2 = IVs[3]
-		var ln16p2 = IVs[4]
-		var ln17p2 = IVs[5]
-		/*
+	}		
 		
+			var hpev = '"hp":'
+			var atev = ',"atk":'
+			var deev = ',"def":'
+			var saev = '"spa":'
+			var sdev = '"spd":'
+			var spev = '"spe":'
 		
-		if (EVs[0] == 0)
-		{
-			var hpev = ""
-		}
-		else var hpev = ln5p1.concat(EVs[0], lnbr)
-		
-		if (EVs[1] == 0)
-		{
-			var atev = ""
-		}
-		else var atev = ln6p1.concat(EVs[1], lnbr)
-		
-		if (EVs[2] == 0)
-		{
-			var deev = ""
-		}
-		else var deev = ln7p1.concat(EVs[2], lnbr)
-		
-		if (EVs[3] == 0)
-		{
-			var saev = ""
-		}
-		else var saev = ln8p1.concat(EVs[3], lnbr)
-		
-		if (EVs[4] == 0)
-		{
-			var sdev = ""
-		}
-		else var sdev = ln9p1.concat(EVs[4], lnbr)
-		
-		if (EVs[5] == 0)
-		{
-			var spev = ""
-		}
-		else var spev = ln10p1.concat(EVs[5], lnbr)
-		
-		
-		
+	/*	
 		if (IVs[0] == 31)
 		{
 			var hpiv = ""
@@ -268,7 +222,7 @@ var savecustom = function()
 */
 	
 		if (document.getElementById('bcheck').checked) {
-        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5);
+        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5]);
     			}
    			else {
        			var bcheck = "";
