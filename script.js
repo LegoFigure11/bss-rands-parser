@@ -256,7 +256,7 @@ var savecustom = function()
 	{
 		var pivs = ""
     		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186
-		    var pivs = '"ivs":{'
+		 pivs = '"ivs":{'
 	}
     
   		if (document.getElementById("hcheck").checked) = true
@@ -264,7 +264,7 @@ var savecustom = function()
     		var p2 = '":{"flags":{'
     		var p3 = '},"sets":['
     		var hcheck = p1.concat(species, p2, flags, p3)
-    		else var hcheck = "";
+    		else hcheck = "";
     
     		var bcheck = "";
     
