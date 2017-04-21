@@ -213,7 +213,7 @@ var savecustom = function()
 			// 185 - 155, 154 - 124, 123 - 93, 92 - 62, 61 - 31, 30 - 0
 			
 
-			
+			/*
 			if(sumivs == 186)
 			{
 				var ivcomma1 = ""
@@ -233,7 +233,7 @@ var savecustom = function()
 			}
 			     }
 		
-				
+			*/	
 			if(sumivs < 186)
 			{
 				if(IVs[0] == 31)
