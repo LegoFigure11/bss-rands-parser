@@ -216,7 +216,7 @@ var savecustom = function()
 				var ivcomma5 = ""
 				}
 			else {if(IVs[1] =! 31)
-			{ if IVs[5] =! 31){
+			{ if (IVs[5] =! 31){
 				var ivcomma3 = ", "
 				}
 			}
