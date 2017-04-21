@@ -264,7 +264,15 @@ var savecustom = function()
 				var ivcomma6= ', '
 				}
 	
+			if(IVs[1] != 31)
+			{
+				if(IVs[5] =! 31)
+				{
+					var ivcomma4 = ', '
+					}
+			}
 	
+				
 			if(sumivs < 186)
 			{
 				if(IVs[0] == 31)
