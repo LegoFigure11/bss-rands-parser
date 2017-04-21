@@ -213,6 +213,44 @@ var savecustom = function()
 				var spiv = ""
 			}
 			else var part10 = ',"ivs":{'
+			
+			if(IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs [5] < 186)
+			{
+				if(IVs[0] == 31)
+				{ 
+					var hpiv = ""
+				}
+				else var hpiv = '"hp":'.concat(IVs[0])
+				
+				if(IVs[1] == 31)
+				{ 
+					var ativ = ""
+				}
+				else var ativ = '"atk":'.concat(IVs[1])
+				
+				if(IVs[2] == 31)
+				{ 
+					var deiv = ""
+				}
+				else var deiv = '"def":'.concat(IVs[2])
+				
+				if(IVs[3] == 31)
+				{ 
+					var saiv = ""
+				}
+				else var saiv = '"spa":'.concat(IVs[3])
+				
+				if(IVs[4] == 31)
+				{ 
+					var sdiv = ""
+				}
+				else var sdiv = '"spd":'.concat(IVs[4])
+				
+				if(IVs[5] == 31)
+				{ 
+					var spiv = ""
+				}
+				else var spiv = '"spe":'.concat(IVs[5])
 		
 	/*	
 		if (IVs[0] == 31)
@@ -256,7 +294,7 @@ var savecustom = function()
 	
 		if (document.getElementById('bcheck').checked) {
 			//        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,IV shit,part11);
-        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,part11);
+        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,hpiv,ativ,deiv,saiv,sdiv,spiv,part11);
     			}
    			else {
        			var bcheck = "";
