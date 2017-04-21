@@ -208,57 +208,20 @@ var savecustom = function()
 
 			
 			if(sumivs == 186)
-			{ 
-				var part10 = ""
-				var hpiv = ""
-				var ativ = ""
-				var deiv = ""
-				var saiv = ""
-				var sdiv = ""
-				var spiv = ""
+			{
+				var ivcomma1 = ""
+				var ivcomma2 = ""
+				var ivcomma3 = ""
+				var ivcomma4 = ""
+				var ivcomma5 = ""
+				}
+			else {if(IVs[1] =! 31)
+			{ if IVs[5] =! 31){
+				var ivcomma3 = ", "
+				}
 			}
-			else var part10 = ',"ivs":{'
-			
-			if(124 < sumivs < 154)	
-			{
-				var ivcomma1 = ', '
-				}
-			else if(93 < sumivs < 123)	
-			{
-				var ivcomma1 = ', '
-				var ivcomma2 = ', '
-				}
-			else if(62 < sumivs < 92)	
-			{
-				var ivcomma1 = ', '
-				var ivcomma2 = ', '
-				var ivcomma3= ', '
-				}
-			else if(31 < sumivs < 61)	
-			{
-				var ivcomma1 = ', '
-				var ivcomma2 = ', '
-				var ivcomma3= ', '
-				var ivcomma4= ', '
-				}
-			else if(0 < sumivs < 30)	
-			{
-				var ivcomma1 = ', '
-				var ivcomma2 = ', '
-				var ivcomma3= ', '
-				var ivcomma4= ', '
-				var ivcomma5= ', '
-				}
-			else
-			{
-				var ivcomma1 = ''
-				var ivcomma2 = ''
-				var ivcomma3= ''
-				var ivcomma4= ''
-				var ivcomma5= ''
-				}
-	
-	
+			     }
+		
 				
 			if(sumivs < 186)
 			{
