@@ -188,7 +188,7 @@ var savecustom = function()
 		}
 		
 		if (document.getElementById('fcheck').checked) {
-        		var fcheck ="]},";
+        		var fcheck ="]}},";
     			}
    			else {
        			var fcheck = "";
