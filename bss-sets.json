@@ -1,1 +1,1 @@
-{"BSS":{
+{"BSS":{"mimikyu":{"flags":{"zmoveOnly":2},"sets":[{"species":Mimikyu","gender":"","item":"Ghostium Z","ability":"Disguise","evs":{"hp":4,"atk":252,"def":0,"spa":0,"spd":0,"spe":252},"nature":"Adamant","moves":[["Swords Dance"],["Shadow Claw"],["Play Rough"],["Shadow Sneak"]]}]},
