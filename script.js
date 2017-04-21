@@ -43,7 +43,6 @@ var savecustom = function()
 	var part7 = '","moves":[["'
 	var part8 = '"],["'
 	var part9 = '"]]'
-	var part10 = ',"ivs":{'
 	var part11 = '}'
 	
 	
@@ -215,9 +214,11 @@ var savecustom = function()
 				var ivcomma3 = ""
 				var ivcomma4 = ""
 				var ivcomma5 = ""
+				var part10 = ""
 				}
-			else {if(IVs[1] =! 31)
-			{ if (IVs[5] =! 31){
+			else {if(IVs[1] != 31)
+				var part10 = ',"ivs":{'
+			{ if (IVs[5] != 31){
 				var ivcomma3 = ", "
 				}
 			}
@@ -265,7 +266,7 @@ var savecustom = function()
 	
 		if (document.getElementById('bcheck').checked) {
 			//        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,IV shit,part11);
-        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,hpiv,ivcomma1,ativ,ivcomma2,deiv,ivcomma3,saiv,ivcomma4,sdiv,ivcomma5,spiv,part11);
+        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,hpiv,ativ,deiv,ivcomma3,saiv,sdiv,spiv,part11);
     			}
    			else {
        			var bcheck = "";
