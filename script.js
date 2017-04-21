@@ -234,8 +234,6 @@ var savecustom = function()
 			     }
 		
 			*/	
-			if(sumivs < 186)
-			{
 				if(IVs[0] == 31)
 				{ 
 					var hpiv = ""
@@ -271,7 +269,7 @@ var savecustom = function()
 					var spiv = ""
 				}
 				else var spiv = '"spe":'.concat(IVs[5])
-			}
+
 	
 		if (document.getElementById('bcheck').checked) {
 			//        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,IV shit,part11);
