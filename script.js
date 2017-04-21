@@ -219,7 +219,7 @@ var savecustom = function()
 			}
 			else var part10 = ',"ivs":{'
 			
-			else if(124 < sumivs < 154)	
+			if(124 < sumivs < 154)	
 			{
 				var ivcomma1 = ', '
 				}
