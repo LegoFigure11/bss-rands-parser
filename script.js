@@ -43,6 +43,7 @@ var savecustom = function()
 	var part7 = '","moves":[["'
 	var part8 = '"],["'
 	var part9 = '"]]'
+	var part10 = ',"ivs":{'
 	var part11 = '}'
 	
 	
