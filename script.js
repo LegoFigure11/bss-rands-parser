@@ -205,6 +205,13 @@ var savecustom = function()
 			
 			// 185 - 155, 154 - 124, 123 - 93, 92 - 62, 61 - 31, 30 - 0
 			
+				var ivcomma1 = ''
+				var ivcomma2 = ''
+				var ivcomma3= ''
+				var ivcomma4= ''
+				var ivcomma5= ''
+				var ivcomma6= ''
+			
 			if(sumivs == 186)
 			{ 
 				var part10 = ""
@@ -255,14 +262,6 @@ var savecustom = function()
 				var ivcomma4= ', '
 				var ivcomma5= ', '
 				var ivcomma6= ', '
-				}
-			else{
-				var ivcomma1 = ''
-				var ivcomma2 = ''
-				var ivcomma3= ''
-				var ivcomma4= ''
-				var ivcomma5= ''
-				var ivcomma6= ''
 				}
 	
 	
