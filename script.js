@@ -205,12 +205,7 @@ var savecustom = function()
 			
 			// 185 - 155, 154 - 124, 123 - 93, 92 - 62, 61 - 31, 30 - 0
 			
-				var ivcomma1 = ''
-				var ivcomma2 = ''
-				var ivcomma3= ''
-				var ivcomma4= ''
-				var ivcomma5= ''
-				var ivcomma6= ''
+
 			
 			if(sumivs == 186)
 			{ 
@@ -224,27 +219,20 @@ var savecustom = function()
 			}
 			else var part10 = ',"ivs":{'
 			
-			if(155 < sumivs < 185)
-			{
-				var ivcomma1 = ', '
-				}
 			else if(124 < sumivs < 154)	
 			{
 				var ivcomma1 = ', '
-				var ivcomma2 = ', '
 				}
 			else if(93 < sumivs < 123)	
 			{
 				var ivcomma1 = ', '
 				var ivcomma2 = ', '
-				var ivcomma3= ', '
 				}
 			else if(62 < sumivs < 92)	
 			{
 				var ivcomma1 = ', '
 				var ivcomma2 = ', '
 				var ivcomma3= ', '
-				var ivcomma4= ', '
 				}
 			else if(31 < sumivs < 61)	
 			{
@@ -252,7 +240,6 @@ var savecustom = function()
 				var ivcomma2 = ', '
 				var ivcomma3= ', '
 				var ivcomma4= ', '
-				var ivcomma5= ', '
 				}
 			else if(0 < sumivs < 30)	
 			{
@@ -261,7 +248,14 @@ var savecustom = function()
 				var ivcomma3= ', '
 				var ivcomma4= ', '
 				var ivcomma5= ', '
-				var ivcomma6= ', '
+				}
+			else
+			{
+				var ivcomma1 = ''
+				var ivcomma2 = ''
+				var ivcomma3= ''
+				var ivcomma4= ''
+				var ivcomma5= ''
 				}
 	
 	
@@ -307,7 +301,7 @@ var savecustom = function()
 	
 		if (document.getElementById('bcheck').checked) {
 			//        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,IV shit,part11);
-        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,hpiv,ivcomma2,ativ,ivcomma3,deiv,ivcomma4,saiv,ivcomma5,sdiv,ivcomma6,spiv,part11);
+        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,hpiv,ivcomma1,ativ,ivcomma2,deiv,ivcomma3,saiv,ivcomma4,sdiv,ivcomma5,spiv,part11);
     			}
    			else {
        			var bcheck = "";
