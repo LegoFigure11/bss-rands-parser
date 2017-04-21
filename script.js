@@ -252,46 +252,6 @@ var savecustom = function()
 				}
 				else var spiv = '"spe":'.concat(IVs[5])
 			}
-		
-	/*	
-		if (IVs[0] == 31)
-		{
-			var hpiv = ""
-		}
-		else var hpiv = ln5p1.concat(IVs[0], lnbr)
-		
-		if (IVs[1] == 31)
-		{
-			var ativ = ""
-		}
-		else var ativ = ln6p1.concat(IVs[1], lnbr)
-		
-		if (IVs[2] == 31)
-		{
-			var deiv = ""
-		}
-		else var deiv = ln7p1.concat(IVs[2], lnbr)
-		
-		if (IVs[3] == 31)
-		{
-			var saiv = ""
-		}
-		else var saiv = ln8p1.concat(IVs[3], lnbr)
-		
-		if (IVs[4] == 31)
-		{
-			var sdiv = ""
-		}
-		else var sdiv = ln9p1.concat(IVs[4], lnbr)
-		
-		if (IVs[5] == 31)
-		{
-			var spiv = ""
-		}
-		else var spiv = ln10p1.concat(IVs[5], lnbr);
-		
-		var concivs = hpiv.concat(ativ,deiv,saiv,sdiv,spiv)
-*/
 	
 		if (document.getElementById('bcheck').checked) {
 			//        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,IV shit,part11);
