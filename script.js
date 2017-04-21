@@ -112,8 +112,6 @@ var savecustom = function()
 			}
 			if(lines[i].indexOf("IVs") != -1) //if IVs are in this line
 			{
-				var ln12p1 = '      "ivs": { \n'
-				var ln11v2 = '      }, \n'
 				ivList = lines[i].split(':')[1].split('/'); //splitting it into a list of " # Stat "
 				for(var j = 0; j < ivList.length; ++j){
 					ivList[j] = ivList[j].trim();
@@ -214,6 +212,7 @@ var savecustom = function()
 				var sdiv = ""
 				var spiv = ""
 			}
+			else var part10 = ',"ivs":{'
 		
 	/*	
 		if (IVs[0] == 31)
