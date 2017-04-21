@@ -44,6 +44,13 @@ var savecustom = function()
 	var part8 = '"],["'
 	var part9 = '"]]'
 	var part11 = '}'
+	var ivcomma1 = ""
+	var ivcomma2 = ""
+	var ivcomma3 = ""
+	var ivcomma4 = ""
+	var ivcomma5 = ""
+	var part10 = ""
+	var part102 = ""
 	
 	
 	
