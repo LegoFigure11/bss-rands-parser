@@ -233,7 +233,11 @@ var savecustom = function()
 				}
 			}
 			     }
-		
+				if(IVs[5] != 31)
+			{ if (IVs[1] == 31){
+				var ivcomma3 = ""				
+			}
+			     
 			
 				if(IVs[0] == 31)
 				{ 
