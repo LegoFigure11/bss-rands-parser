@@ -229,6 +229,7 @@ var savecustom = function()
 				var part102 = "}"
 			{ if (IVs[5] != 31){
 				var ivcomma3 = ","
+				var part10 = ',"ivs":{'
 				}
 			}
 			     }
