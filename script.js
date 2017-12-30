@@ -23,6 +23,10 @@ var savecustom = function()
 {
 
 	var string = document.getElementById('customMon').value
+	if(string.length == 0) {
+		document.getElementById("Output").innerHTML = "Input Error - No input."
+		console.log("Error! No input.")
+	} else {
 	var lines = string.split('\n')
 	var species = "";
 	var item = "";
@@ -87,6 +91,10 @@ var savecustom = function()
 		if(species == showdownFormes[i][0])
 			species = showdownFormes[i][1]
 	}
+		if(species.length < 2) {
+		document.getElementById("Output").innerHTML = "Input Error - Invalid input. \nPlease ensure the set is pasted above in the PS! importable format."
+		console.log("Error! Invalid input.")
+	} else {
 	
 	if(lines[0].indexOf('@') != -1)
 		item = lines[0].substring(lines[0].indexOf('@')+1).trim(); //item is always after @
@@ -157,25 +165,22 @@ var savecustom = function()
 			
 			if(item.indexOf("ium") != -1) //if item is Z move
 			{
-				flags = '"zmoveOnly":2'
+				flags = '"zmoveOnly":1'
 			}
 			if(item.indexOf("ite") != -1) //if item is a mega stone
 			{
-				if(item == "White Herb")
+				if(item == "White Herb" || item == "Eviolite")
 				   {
 				   flags = ""
 				   }
-				 else if(item == "Eviolite")
-				 {
-					 flags = ""
-				 }
 				else flags = '"megaOnly":1'
 			}
 			
 
 		var pivs = ""
-    		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186)
+    		if ((IVs[0] + IVs[1] + IVs[2] + IVs[3] + IVs[4] + IVs[5])<186) {
 		var pivs = '"ivs":{'
+		}
     
 		if (document.getElementById('hcheck').checked) {
     		var p1 = '{"'
@@ -189,9 +194,11 @@ var savecustom = function()
 		
 		if (document.getElementById('fcheck').checked) {
         		var fcheck ="]}},";
+				var part11 = '}'
     			}
    			else {
        			var fcheck = "";
+				var part11 = '},'
     			}		
 			
 		    if (lines[0].indexOf('(') != -1)
@@ -278,15 +285,22 @@ var savecustom = function()
 	
 		if (document.getElementById('bcheck').checked) {
 			//        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,IV shit,part11);
-        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1,part8,move2,part8,move3,part8,move4,part9,part10,hpiv,ativ,deiv,ivcomma3,saiv,sdiv,spiv,part102,part11);
+        		var bcheck = part1.concat(species,part2,gender,part3,item,part4,ability,part5,hpev,EVs[0],atev,EVs[1],deev,EVs[2],saev,EVs[3],sdev,EVs[4],spev,EVs[5],part6,nature,part7,move1.replace(/ \/ /g, '","'),part8,move2.replace(/ \/ /g, '","'),part8,move3.replace(/ \/ /g, '","'),part8,move4.replace(/ \/ /g, '","'),part9,part10,hpiv,ativ,deiv,ivcomma3,saiv,sdiv,spiv,part102,part11);
     			}
    			else {
        			var bcheck = "";
     			}
-		
-		
 	//var res = ln1p1.concat(species, ln1p2, ln2p1, ln2p2, ln2p3, ln3, ln4, hpev, atev, deev, saev, sdev, spev, ln11, ln12p1, hpiv, ativ, deiv, saiv, sdiv, spiv, ln11v2, ln19p1, nature, lnen, ln20p1, ability, lnen, ln21p1, item, lnen, ln22, lnmv, move1, lnen, lnmv, move2, lnen, lnmv, move3, lnen, lnmv, move4, lnenl, ln3l, ln2l, lnl);
+	if(hcheck.concat(bcheck, fcheck).length == 0) {
+		document.getElementById("Output").innerHTML = "No output selected."
+		console.log("No output selected.")
+	} else {
     document.getElementById("Output").innerHTML = hcheck.concat(bcheck, fcheck)
-
-
+	
+	var copyText = document.getElementById("Output");
+	copyText.select();
+	document.execCommand("Copy");
+	}
+}
+}
 }
