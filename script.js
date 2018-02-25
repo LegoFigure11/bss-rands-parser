@@ -4,10 +4,13 @@
 		console.log("Error! No input.")
     } else {
 	var lines = string.split('\n')
-  
+}
+savecustom() {
   for (var i; i < lines.length; i++) {
      if (lines[i].indexOf('.') !== 3) {
 		{
 		document.getElementById("Output").innerHTML = lines[i].replace(' ', '@');
 		}
 	}
+}
+}
